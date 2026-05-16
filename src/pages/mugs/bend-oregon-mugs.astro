@@ -1,6 +1,6 @@
 ---
-const pageTitle = "Bend Oregon Mugs | Coffee Mugs Inspired by Bend, OR";
-const pageDescription = "Shop Bend, Oregon coffee mugs inspired by mountain mornings, local coffee, Smith Rock, the Cascades, and Central Oregon adventures.";
+const pageTitle = "Bend Oregon Mugs | Bend Oregon Coffee Mugs & Gifts";
+const pageDescription = "Shop Bend Oregon mugs and coffee cups inspired by Mt. Bachelor, Smith Rock, the Cascade Mountains, local coffee, and Central Oregon adventures.";
 ---
 
 <!doctype html>
@@ -10,12 +10,12 @@ const pageDescription = "Shop Bend, Oregon coffee mugs inspired by mountain morn
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
-    <link rel="canonical" href="https://shop.allthingsbend.org/mugs/bend-oregon-mugs" />
+    <link rel="canonical" href="https://shop.allthingsbend.org/mugs/bend-oregon-mugs/" />
 
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shop.allthingsbend.org/mugs/bend-oregon-mugs" />
+    <meta property="og:url" content="https://shop.allthingsbend.org/mugs/bend-oregon-mugs/" />
 
     <style>
       body {
@@ -47,18 +47,33 @@ const pageDescription = "Shop Bend, Oregon coffee mugs inspired by mountain morn
 
       main {
         padding: 40px 24px;
-        max-width: 900px;
+        max-width: 960px;
         margin: auto;
       }
 
       h1 {
-        font-size: 42px;
+        font-size: 44px;
         line-height: 1.1;
         margin-bottom: 16px;
       }
 
       h2 {
-        margin-top: 36px;
+        margin-top: 42px;
+        font-size: 28px;
+      }
+
+      h3 {
+        margin-top: 24px;
+        font-size: 22px;
+      }
+
+      a {
+        color: #234437;
+      }
+
+      .intro {
+        font-size: 19px;
+        max-width: 780px;
       }
 
       .button {
@@ -72,16 +87,40 @@ const pageDescription = "Shop Bend, Oregon coffee mugs inspired by mountain morn
         font-weight: bold;
       }
 
-      a {
-        color: #234437;
-      }
-
       .card {
         background: white;
         padding: 24px;
         border-radius: 14px;
         margin-top: 24px;
         border: 1px solid #eee3d2;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .small-card {
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        border: 1px solid #eee3d2;
+      }
+
+      .note {
+        background: #eef3ec;
+        padding: 20px;
+        border-left: 5px solid #234437;
+        border-radius: 10px;
+        margin-top: 28px;
+      }
+
+      footer {
+        padding: 32px 24px;
+        text-align: center;
+        color: #6f665c;
       }
     </style>
   </head>
@@ -90,32 +129,95 @@ const pageDescription = "Shop Bend, Oregon coffee mugs inspired by mountain morn
     <header>
       <a href="/">All Things Bend Shop</a>
       <nav>
-        <a href="/mugs/bend-oregon-mugs">Mugs</a>
-        <a href="/shirts/bend-oregon-shirts">Shirts</a>
-        <a href="/stickers/bend-oregon-stickers">Stickers</a>
+        <a href="/mugs/bend-oregon-mugs/">Mugs</a>
+        <a href="/shirts/bend-oregon-shirts/">Shirts</a>
+        <a href="/stickers/bend-oregon-stickers/">Stickers</a>
       </nav>
     </header>
 
     <main>
-      <h1>Bend Oregon Mugs</h1>
+      <h1>Bend Oregon Mugs & Coffee Cups</h1>
 
-      <p>Bring a little Bend into your morning routine with coffee mugs inspired by Central Oregon, mountain views, high desert adventures, local coffee culture, and the places that make Bend special.</p>
+      <p class="intro">
+        Shop Bend Oregon mugs and coffee cups inspired by mountain mornings, local coffee, Mt. Bachelor ski days, Smith Rock views, the Deschutes River, and everyday life in Central Oregon.
+      </p>
 
-      <div class="card">
-        <h2>Coffee mugs for Bend lovers</h2>
-        <p>These mugs are made for people who love slow mornings, trail days, camping trips, river walks, Smith Rock views, and cozy coffee before heading outside.</p>
+      <a class="button" href="https://allthingsbend.etsy.com" target="_blank" rel="noopener noreferrer">
+        Shop Bend Mugs on Etsy
+      </a>
+
+      <section>
+        <h2>Bend Oregon Coffee Mugs Inspired by Central Oregon</h2>
+        <p>
+          Our Bend Oregon coffee mugs are made for people who love the outdoors, cozy mornings, local coffee shops, high desert views, and the laid-back lifestyle that makes Bend special. Whether you live in Bend, used to live here, visit every year, or just love Central Oregon, these mugs are designed to feel local, simple, and easy to use every day.
+        </p>
+
+        <p>
+          Each design is inspired by the places and moments people associate with Bend, including early coffee before a ski day, slow mornings after camping, scenic drives through the Cascades, and quiet afternoons near the river.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="small-card">
+          <h3>Mt. Bachelor Coffee Mugs</h3>
+          <p>
+            Bend mugs inspired by ski mornings, snowy drives, and that first cup of coffee before heading up to Mt. Bachelor.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Smith Rock & High Desert Designs</h3>
+          <p>
+            Coffee cups inspired by Central Oregon scenery, desert colors, rock formations, and the outdoor places locals love.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Bend Souvenir Mugs</h3>
+          <p>
+            A practical Bend Oregon souvenir for visitors, locals, family, friends, and anyone who wants a reminder of Bend at home.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why These Bend Oregon Mugs Make Great Gifts</h2>
+        <p>
+          A Bend Oregon mug is a simple gift that feels personal. It works for coffee drinkers, tea drinkers, skiers, hikers, campers, river lovers, and anyone with a connection to Bend. These mugs are especially good for birthdays, holidays, housewarming gifts, thank-you gifts, and souvenirs after a Central Oregon trip.
+        </p>
+
+        <div class="note">
+          Popular searches this collection is built around include Bend Oregon mugs, Bend Oregon coffee mugs, Bend coffee cups, Bend souvenir mugs, Central Oregon mugs, and Mt. Bachelor coffee mugs.
+        </div>
+      </section>
+
+      <section>
+        <h2>Shop Bend Mugs on Etsy</h2>
+        <p>
+          You can browse the latest Bend-inspired mug designs in the All Things Bend Etsy shop. New designs may include local sayings, mountain-inspired artwork, minimalist Bend designs, and coffee mugs made for people who love Central Oregon.
+        </p>
 
         <a class="button" href="https://allthingsbend.etsy.com" target="_blank" rel="noopener noreferrer">
-          Shop Bend Mugs on Etsy
+          View Bend Oregon Coffee Mugs
         </a>
-      </div>
+      </section>
 
-      <h2>Related collections</h2>
-      <ul>
-        <li><a href="/shirts/bend-oregon-shirts">Bend Oregon Shirts</a></li>
-        <li><a href="/stickers/bend-oregon-stickers">Bend Oregon Stickers</a></li>
-        <li><a href="/mugs/sisters-oregon-mugs">Sisters Oregon Mugs</a></li>
-      </ul>
+      <section>
+        <h2>Related Bend Oregon Gift Collections</h2>
+        <p>
+          Looking for more Bend-inspired gifts? Explore shirts, stickers, and other local designs connected to Bend, Sisters, and Central Oregon.
+        </p>
+
+        <ul>
+          <li><a href="/shirts/bend-oregon-shirts/">Bend Oregon Shirts</a></li>
+          <li><a href="/stickers/bend-oregon-stickers/">Bend Oregon Stickers</a></li>
+          <li><a href="/mugs/sisters-oregon-mugs/">Sisters Oregon Mugs</a></li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      All Things Bend Shop
+    </footer>
   </body>
 </html>
