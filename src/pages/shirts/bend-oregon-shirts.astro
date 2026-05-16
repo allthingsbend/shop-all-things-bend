@@ -1,146 +1,116 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+
 const pageTitle = "Bend Oregon Shirts | Bend Oregon T Shirts & Apparel";
 const pageDescription = "Shop Bend Oregon shirts and t shirts inspired by Mt. Bachelor, Central Oregon, mountain life, coffee culture, hiking, skiing, and outdoor adventures.";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{pageTitle}</title>
-    <meta name="description" content={pageDescription} />
-    <link rel="canonical" href="https://shop.allthingsbend.org/shirts/bend-oregon-shirts/" />
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Bend Oregon shirts</div>
 
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={pageDescription} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shop.allthingsbend.org/shirts/bend-oregon-shirts/" />
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #faf7ef;
-        color: #2f2a24;
-        line-height: 1.6;
-      }
-
-      header {
-        padding: 24px;
-        background: #234437;
-        color: white;
-      }
-
-      header a {
-        color: white;
-        text-decoration: none;
-      }
-
-      nav {
-        margin-top: 12px;
-      }
-
-      nav a {
-        margin-right: 16px;
-      }
-
-      main {
-        padding: 40px 24px;
-        max-width: 960px;
-        margin: auto;
-      }
-
-      h1 {
-        font-size: 44px;
-        line-height: 1.1;
-        margin-bottom: 16px;
-      }
-
-      h2 {
-        margin-top: 42px;
-        font-size: 28px;
-      }
-
-      h3 {
-        margin-top: 24px;
-        font-size: 22px;
-      }
-
-      a {
-        color: #234437;
-      }
-
-      .intro {
-        font-size: 19px;
-        max-width: 780px;
-      }
-
-      .button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 14px 22px;
-        background: #234437;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-      }
-
-      .card {
-        background: white;
-        padding: 24px;
-        border-radius: 14px;
-        margin-top: 24px;
-        border: 1px solid #eee3d2;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 18px;
-        margin-top: 20px;
-      }
-
-      .small-card {
-        background: white;
-        padding: 20px;
-        border-radius: 14px;
-        border: 1px solid #eee3d2;
-      }
-
-      .note {
-        background: #eef3ec;
-        padding: 20px;
-        border-left: 5px solid #234437;
-        border-radius: 10px;
-        margin-top: 28px;
-      }
-
-      footer {
-        padding: 32px 24px;
-        text-align: center;
-        color: #6f665c;
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <a href="/">All Things Bend Shop</a>
-
-      <nav>
-        <a href="/mugs/bend-oregon-mugs/">Mugs</a>
-        <a href="/shirts/bend-oregon-shirts/">Shirts</a>
-        <a href="/stickers/bend-oregon-stickers/">Stickers</a>
-      </nav>
-    </header>
-
-    <main>
       <h1>Bend Oregon Shirts & T Shirts</h1>
 
-      <p class="intro">
-        Shop Bend Oregon shirts and t shirts inspired by mountain towns, Central Oregon adventures, local coffee culture, ski mornings, hiking trails, river days, and the laid-back Bend lifestyle.
+      <p>
+        Shop Bend Oregon shirts inspired by mountain towns, Central Oregon
+        adventures, local coffee culture, ski mornings, hiking trails, river
+        days, and the laid-back Bend lifestyle.
+      </p>
+
+      <div class="hero-buttons">
+        <a
+          class="button"
+          href="https://allthingsbend.etsy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shop on Etsy
+        </a>
+
+        <a
+          class="button secondary"
+          href="/mugs/bend-oregon-mugs/"
+        >
+          Browse Mugs
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>Bend Oregon T Shirts Inspired by Central Oregon</h2>
+
+      <p>
+        These Bend Oregon t shirts are designed around the places, activities,
+        and everyday moments that make Bend unique. Think coffee before Mt.
+        Bachelor, hiking near Smith Rock, river days on the Deschutes, and
+        weekends exploring Central Oregon.
+      </p>
+
+      <p>
+        Whether you live in Bend, visit every year, or simply love mountain
+        towns and the Pacific Northwest, these shirts are made to feel simple,
+        comfortable, local, and easy to wear.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Mt. Bachelor & Ski Inspired Shirts</h3>
+
+        <p>
+          Bend Oregon shirts inspired by powder mornings, ski culture, mountain
+          views, and coffee before heading up to Mt. Bachelor.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Minimalist Bend Oregon Apparel</h3>
+
+        <p>
+          Clean and simple Bend t shirt designs inspired by outdoor living,
+          Central Oregon landscapes, and everyday local life.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Outdoor & Adventure Inspired Shirts</h3>
+
+        <p>
+          Apparel inspired by hiking, camping, paddleboarding, river days,
+          breweries, coffee shops, and weekends exploring Bend.
+        </p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>Why Bend Oregon Shirts Make Great Gifts</h2>
+
+      <p>
+        Bend Oregon t shirts make great gifts for locals, former locals,
+        travelers, outdoor lovers, hikers, skiers, campers, coffee lovers, and
+        anyone connected to Central Oregon.
+      </p>
+
+      <p>
+        They work well as souvenirs, birthday gifts, holiday gifts, or simple
+        everyday shirts inspired by Bend.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Shop Bend Oregon Apparel on Etsy</h2>
+
+      <p>
+        Browse the latest Bend-inspired shirt designs in the All Things Bend
+        Etsy shop. New apparel designs may include mountain themes, local
+        sayings, minimalist artwork, coffee-inspired graphics, and outdoor
+        inspired Central Oregon apparel.
       </p>
 
       <a
@@ -149,107 +119,52 @@ const pageDescription = "Shop Bend Oregon shirts and t shirts inspired by Mt. Ba
         target="_blank"
         rel="noopener noreferrer"
       >
-        Shop Bend Oregon Shirts on Etsy
+        View Bend Oregon T Shirts
       </a>
+    </section>
 
-      <section>
-        <h2>Bend Oregon T Shirts Inspired by Central Oregon</h2>
+    <section class="intro">
+      <h2>Related Bend Oregon Collections</h2>
 
-        <p>
-          These Bend Oregon t shirts are designed around the places, activities, and everyday moments that make Bend unique. From early mornings grabbing coffee before heading to Mt. Bachelor to hiking near Smith Rock or spending the day along the Deschutes River, the designs reflect the outdoor lifestyle that people connect with in Central Oregon.
-        </p>
-
-        <p>
-          Whether you live in Bend, visit every year, or simply love mountain towns and the Pacific Northwest, these shirts are made to feel simple, comfortable, local, and easy to wear anywhere.
-        </p>
-      </section>
-
-      <section class="grid">
-        <div class="small-card">
-          <h3>Mt. Bachelor & Ski Inspired Shirts</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>Bend Oregon Mugs</h3>
 
           <p>
-            Bend Oregon shirts inspired by powder mornings, ski culture, mountain views, and coffee before heading up to Mt. Bachelor.
+            Coffee mugs inspired by Bend mornings, Mt. Bachelor, Smith Rock,
+            and Central Oregon adventures.
           </p>
+
+          <a href="/mugs/bend-oregon-mugs/">
+            View collection
+          </a>
         </div>
 
-        <div class="small-card">
-          <h3>Minimalist Bend Oregon Apparel</h3>
+        <div class="card">
+          <h3>Bend Oregon Stickers</h3>
 
           <p>
-            Clean and simple Bend t shirt designs inspired by outdoor living, Central Oregon landscapes, and everyday local life.
+            Stickers inspired by coffee, mountains, skiing, camping, and Bend.
           </p>
+
+          <a href="/stickers/bend-oregon-stickers/">
+            View collection
+          </a>
         </div>
 
-        <div class="small-card">
-          <h3>Outdoor & Adventure Inspired Shirts</h3>
+        <div class="card">
+          <h3>Sisters Oregon Shirts</h3>
 
           <p>
-            Apparel inspired by hiking, camping, paddleboarding, river days, breweries, coffee shops, and weekends exploring Bend.
+            Local-inspired shirt designs connected to Sisters, Oregon and the
+            Three Sisters.
           </p>
+
+          <a href="/shirts/sisters-oregon-shirts/">
+            View collection
+          </a>
         </div>
-      </section>
-
-      <section>
-        <h2>Why Bend Oregon Shirts Make Great Gifts</h2>
-
-        <p>
-          Bend Oregon t shirts make great gifts for locals, former locals, travelers, outdoor lovers, hikers, skiers, campers, coffee lovers, and anyone who has a connection to Central Oregon. They work well as souvenirs, birthday gifts, holiday gifts, or simple everyday shirts inspired by Bend.
-        </p>
-
-        <div class="note">
-          This collection is optimized around searches including Bend Oregon shirts, Bend Oregon t shirts, Bend apparel, Central Oregon shirts, Mt. Bachelor shirts, and Bend Oregon clothing.
-        </div>
-      </section>
-
-      <section>
-        <h2>Shop Bend Oregon Apparel on Etsy</h2>
-
-        <p>
-          Browse the latest Bend-inspired shirt designs in the All Things Bend Etsy shop. New apparel designs may include mountain themes, local sayings, minimalist artwork, coffee-inspired graphics, and outdoor-inspired Central Oregon apparel.
-        </p>
-
-        <a
-          class="button"
-          href="https://allthingsbend.etsy.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Bend Oregon T Shirts
-        </a>
-      </section>
-
-      <section>
-        <h2>Related Bend Oregon Collections</h2>
-
-        <p>
-          Looking for more Bend-inspired products? Explore mugs, stickers, and other Central Oregon inspired items.
-        </p>
-
-        <ul>
-          <li>
-            <a href="/mugs/bend-oregon-mugs/">
-              Bend Oregon Mugs
-            </a>
-          </li>
-
-          <li>
-            <a href="/stickers/bend-oregon-stickers/">
-              Bend Oregon Stickers
-            </a>
-          </li>
-
-          <li>
-            <a href="/shirts/sisters-oregon-shirts/">
-              Sisters Oregon Shirts
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      All Things Bend Shop
-    </footer>
-  </body>
-</html>
+      </div>
+    </section>
+  </main>
+</Layout>
