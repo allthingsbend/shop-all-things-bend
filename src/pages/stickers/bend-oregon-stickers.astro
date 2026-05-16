@@ -1,6 +1,6 @@
 ---
-const pageTitle = "Bend Oregon Stickers | Bend, OR Stickers and Local Designs";
-const pageDescription = "Shop Bend, Oregon stickers inspired by hiking, coffee, Smith Rock, the Cascades, and Central Oregon outdoor life.";
+const pageTitle = "Bend Oregon Stickers | Bend Stickers & Central Oregon Stickers";
+const pageDescription = "Shop Bend Oregon stickers inspired by Mt. Bachelor, Central Oregon, hiking, skiing, coffee culture, mountain towns, and outdoor adventures.";
 ---
 
 <!doctype html>
@@ -10,12 +10,12 @@ const pageDescription = "Shop Bend, Oregon stickers inspired by hiking, coffee, 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
-    <link rel="canonical" href="https://shop.allthingsbend.org/stickers/bend-oregon-stickers" />
+    <link rel="canonical" href="https://shop.allthingsbend.org/stickers/bend-oregon-stickers/" />
 
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shop.allthingsbend.org/stickers/bend-oregon-stickers" />
+    <meta property="og:url" content="https://shop.allthingsbend.org/stickers/bend-oregon-stickers/" />
 
     <style>
       body {
@@ -47,18 +47,33 @@ const pageDescription = "Shop Bend, Oregon stickers inspired by hiking, coffee, 
 
       main {
         padding: 40px 24px;
-        max-width: 900px;
+        max-width: 960px;
         margin: auto;
       }
 
       h1 {
-        font-size: 42px;
+        font-size: 44px;
         line-height: 1.1;
         margin-bottom: 16px;
       }
 
       h2 {
-        margin-top: 36px;
+        margin-top: 42px;
+        font-size: 28px;
+      }
+
+      h3 {
+        margin-top: 24px;
+        font-size: 22px;
+      }
+
+      a {
+        color: #234437;
+      }
+
+      .intro {
+        font-size: 19px;
+        max-width: 780px;
       }
 
       .button {
@@ -72,16 +87,32 @@ const pageDescription = "Shop Bend, Oregon stickers inspired by hiking, coffee, 
         font-weight: bold;
       }
 
-      a {
-        color: #234437;
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
       }
 
-      .card {
+      .small-card {
         background: white;
-        padding: 24px;
+        padding: 20px;
         border-radius: 14px;
-        margin-top: 24px;
         border: 1px solid #eee3d2;
+      }
+
+      .note {
+        background: #eef3ec;
+        padding: 20px;
+        border-left: 5px solid #234437;
+        border-radius: 10px;
+        margin-top: 28px;
+      }
+
+      footer {
+        padding: 32px 24px;
+        text-align: center;
+        color: #6f665c;
       }
     </style>
   </head>
@@ -89,33 +120,132 @@ const pageDescription = "Shop Bend, Oregon stickers inspired by hiking, coffee, 
   <body>
     <header>
       <a href="/">All Things Bend Shop</a>
+
       <nav>
-        <a href="/mugs/bend-oregon-mugs">Mugs</a>
-        <a href="/shirts/bend-oregon-shirts">Shirts</a>
-        <a href="/stickers/bend-oregon-stickers">Stickers</a>
+        <a href="/mugs/bend-oregon-mugs/">Mugs</a>
+        <a href="/shirts/bend-oregon-shirts/">Shirts</a>
+        <a href="/stickers/bend-oregon-stickers/">Stickers</a>
       </nav>
     </header>
 
     <main>
-      <h1>Bend Oregon Stickers</h1>
+      <h1>Bend Oregon Stickers & Central Oregon Stickers</h1>
 
-      <p>Add a little Bend to your water bottle, laptop, cooler, notebook, or gear with stickers inspired by Central Oregon and outdoor life.</p>
+      <p class="intro">
+        Shop Bend Oregon stickers inspired by mountain towns, local coffee shops, skiing at Mt. Bachelor, hiking trails, Smith Rock, river days, camping trips, and the outdoor lifestyle that makes Central Oregon unique.
+      </p>
 
-      <div class="card">
-        <h2>Stickers for Bend adventures</h2>
-        <p>These stickers are inspired by Bend coffee, trails, Smith Rock, mountain mornings, camping trips, river days, and the everyday beauty of Central Oregon.</p>
+      <a
+        class="button"
+        href="https://allthingsbend.etsy.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Shop Bend Stickers on Etsy
+      </a>
 
-        <a class="button" href="https://allthingsbend.etsy.com" target="_blank" rel="noopener noreferrer">
-          Shop Bend Stickers on Etsy
+      <section>
+        <h2>Bend Stickers Inspired by Central Oregon</h2>
+
+        <p>
+          These Bend Oregon stickers are designed around the places, scenery, and everyday moments people associate with Bend and Central Oregon. From snowy mornings heading to Mt. Bachelor to coffee runs, paddleboarding, hiking, breweries, camping trips, and high desert sunsets, the designs are inspired by the Bend lifestyle locals and visitors love.
+        </p>
+
+        <p>
+          Whether you are decorating a water bottle, laptop, ski box, cooler, travel mug, notebook, or car window, these stickers are made for people who want something that feels simple, outdoorsy, local, and connected to Bend.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="small-card">
+          <h3>Mt. Bachelor & Ski Stickers</h3>
+
+          <p>
+            Bend stickers inspired by ski culture, mountain mornings, snow days, coffee before Bachelor, and life in a mountain town.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Outdoor & Adventure Stickers</h3>
+
+          <p>
+            Central Oregon stickers inspired by hiking, camping, paddleboarding, fishing, river days, road trips, and outdoor adventures around Bend.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Minimalist Bend Oregon Designs</h3>
+
+          <p>
+            Clean and simple Bend Oregon sticker designs inspired by mountain scenery, local sayings, coffee culture, and the laid-back Bend aesthetic.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why Bend Oregon Stickers Are So Popular</h2>
+
+        <p>
+          Bend Oregon stickers are a simple way to bring a little piece of Central Oregon with you wherever you go. They make great souvenirs, small gifts, travel keepsakes, and everyday accessories for people who love Bend, outdoor adventures, coffee culture, and mountain town life.
+        </p>
+
+        <p>
+          Many people use Bend stickers on water bottles, skis, snowboards, coolers, laptops, campers, and travel gear to show their connection to Central Oregon and the outdoor lifestyle.
+        </p>
+
+        <div class="note">
+          This collection is optimized around searches including Bend Oregon stickers, Bend stickers, Central Oregon stickers, Mt. Bachelor stickers, Bend Oregon decals, and Bend Oregon outdoor stickers.
+        </div>
+      </section>
+
+      <section>
+        <h2>Shop Bend Oregon Stickers on Etsy</h2>
+
+        <p>
+          Browse the latest Bend-inspired sticker designs in the All Things Bend Etsy shop. New designs may include mountain-inspired artwork, local sayings, outdoor themes, ski culture references, coffee-inspired graphics, and minimalist Central Oregon designs.
+        </p>
+
+        <a
+          class="button"
+          href="https://allthingsbend.etsy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Bend Oregon Stickers
         </a>
-      </div>
+      </section>
 
-      <h2>Related collections</h2>
-      <ul>
-        <li><a href="/mugs/bend-oregon-mugs">Bend Oregon Mugs</a></li>
-        <li><a href="/shirts/bend-oregon-shirts">Bend Oregon Shirts</a></li>
-        <li><a href="/stickers/sisters-oregon-stickers">Sisters Oregon Stickers</a></li>
-      </ul>
+      <section>
+        <h2>Related Bend Oregon Collections</h2>
+
+        <p>
+          Looking for more Bend-inspired products? Explore mugs, shirts, and other Central Oregon inspired items.
+        </p>
+
+        <ul>
+          <li>
+            <a href="/mugs/bend-oregon-mugs/">
+              Bend Oregon Mugs
+            </a>
+          </li>
+
+          <li>
+            <a href="/shirts/bend-oregon-shirts/">
+              Bend Oregon Shirts
+            </a>
+          </li>
+
+          <li>
+            <a href="/stickers/sisters-oregon-stickers/">
+              Sisters Oregon Stickers
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      All Things Bend Shop
+    </footer>
   </body>
 </html>
