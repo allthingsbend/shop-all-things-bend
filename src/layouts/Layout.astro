@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="logo" href="/">All Things Bend Shop</a>
+
+        <nav aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/mugs/bend-oregon-mugs/">Mugs</a>
+          <a href="/shirts/bend-oregon-shirts/">Shirts</a>
+          <a href="/stickers/bend-oregon-stickers/">Stickers</a>
+          <a href="https://allthingsbend.org/">All Things Bend</a>
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <p>&copy; {new Date().getFullYear()} All Things Bend Shop</p>
+    </footer>
+  </body>
+</html>
