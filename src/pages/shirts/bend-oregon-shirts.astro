@@ -1,6 +1,6 @@
 ---
-const pageTitle = "Bend Oregon Shirts | Bend, OR T-Shirts and Local Apparel";
-const pageDescription = "Shop Bend, Oregon shirts inspired by Central Oregon, mountain adventures, coffee culture, Smith Rock, and the high desert lifestyle.";
+const pageTitle = "Bend Oregon Shirts | Bend Oregon T Shirts & Apparel";
+const pageDescription = "Shop Bend Oregon shirts and t shirts inspired by Mt. Bachelor, Central Oregon, mountain life, coffee culture, hiking, skiing, and outdoor adventures.";
 ---
 
 <!doctype html>
@@ -10,12 +10,12 @@ const pageDescription = "Shop Bend, Oregon shirts inspired by Central Oregon, mo
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
-    <link rel="canonical" href="https://shop.allthingsbend.org/shirts/bend-oregon-shirts" />
+    <link rel="canonical" href="https://shop.allthingsbend.org/shirts/bend-oregon-shirts/" />
 
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shop.allthingsbend.org/shirts/bend-oregon-shirts" />
+    <meta property="og:url" content="https://shop.allthingsbend.org/shirts/bend-oregon-shirts/" />
 
     <style>
       body {
@@ -47,18 +47,33 @@ const pageDescription = "Shop Bend, Oregon shirts inspired by Central Oregon, mo
 
       main {
         padding: 40px 24px;
-        max-width: 900px;
+        max-width: 960px;
         margin: auto;
       }
 
       h1 {
-        font-size: 42px;
+        font-size: 44px;
         line-height: 1.1;
         margin-bottom: 16px;
       }
 
       h2 {
-        margin-top: 36px;
+        margin-top: 42px;
+        font-size: 28px;
+      }
+
+      h3 {
+        margin-top: 24px;
+        font-size: 22px;
+      }
+
+      a {
+        color: #234437;
+      }
+
+      .intro {
+        font-size: 19px;
+        max-width: 780px;
       }
 
       .button {
@@ -72,10 +87,6 @@ const pageDescription = "Shop Bend, Oregon shirts inspired by Central Oregon, mo
         font-weight: bold;
       }
 
-      a {
-        color: #234437;
-      }
-
       .card {
         background: white;
         padding: 24px;
@@ -83,39 +94,162 @@ const pageDescription = "Shop Bend, Oregon shirts inspired by Central Oregon, mo
         margin-top: 24px;
         border: 1px solid #eee3d2;
       }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .small-card {
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        border: 1px solid #eee3d2;
+      }
+
+      .note {
+        background: #eef3ec;
+        padding: 20px;
+        border-left: 5px solid #234437;
+        border-radius: 10px;
+        margin-top: 28px;
+      }
+
+      footer {
+        padding: 32px 24px;
+        text-align: center;
+        color: #6f665c;
+      }
     </style>
   </head>
 
   <body>
     <header>
       <a href="/">All Things Bend Shop</a>
+
       <nav>
-        <a href="/mugs/bend-oregon-mugs">Mugs</a>
-        <a href="/shirts/bend-oregon-shirts">Shirts</a>
-        <a href="/stickers/bend-oregon-stickers">Stickers</a>
+        <a href="/mugs/bend-oregon-mugs/">Mugs</a>
+        <a href="/shirts/bend-oregon-shirts/">Shirts</a>
+        <a href="/stickers/bend-oregon-stickers/">Stickers</a>
       </nav>
     </header>
 
     <main>
-      <h1>Bend Oregon Shirts</h1>
+      <h1>Bend Oregon Shirts & T Shirts</h1>
 
-      <p>Wear your love for Bend with shirts inspired by Central Oregon trails, local coffee, river days, mountain views, and the high desert lifestyle.</p>
+      <p class="intro">
+        Shop Bend Oregon shirts and t shirts inspired by mountain towns, Central Oregon adventures, local coffee culture, ski mornings, hiking trails, river days, and the laid-back Bend lifestyle.
+      </p>
 
-      <div class="card">
-        <h2>T-shirts for Bend locals and visitors</h2>
-        <p>These Bend shirts are designed for casual days, road trips, camping weekends, coffee runs, and everyday local style without feeling too touristy.</p>
+      <a
+        class="button"
+        href="https://allthingsbend.etsy.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Shop Bend Oregon Shirts on Etsy
+      </a>
 
-        <a class="button" href="https://allthingsbend.etsy.com" target="_blank" rel="noopener noreferrer">
-          Shop Bend Shirts on Etsy
+      <section>
+        <h2>Bend Oregon T Shirts Inspired by Central Oregon</h2>
+
+        <p>
+          These Bend Oregon t shirts are designed around the places, activities, and everyday moments that make Bend unique. From early mornings grabbing coffee before heading to Mt. Bachelor to hiking near Smith Rock or spending the day along the Deschutes River, the designs reflect the outdoor lifestyle that people connect with in Central Oregon.
+        </p>
+
+        <p>
+          Whether you live in Bend, visit every year, or simply love mountain towns and the Pacific Northwest, these shirts are made to feel simple, comfortable, local, and easy to wear anywhere.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="small-card">
+          <h3>Mt. Bachelor & Ski Inspired Shirts</h3>
+
+          <p>
+            Bend Oregon shirts inspired by powder mornings, ski culture, mountain views, and coffee before heading up to Mt. Bachelor.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Minimalist Bend Oregon Apparel</h3>
+
+          <p>
+            Clean and simple Bend t shirt designs inspired by outdoor living, Central Oregon landscapes, and everyday local life.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h3>Outdoor & Adventure Inspired Shirts</h3>
+
+          <p>
+            Apparel inspired by hiking, camping, paddleboarding, river days, breweries, coffee shops, and weekends exploring Bend.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why Bend Oregon Shirts Make Great Gifts</h2>
+
+        <p>
+          Bend Oregon t shirts make great gifts for locals, former locals, travelers, outdoor lovers, hikers, skiers, campers, coffee lovers, and anyone who has a connection to Central Oregon. They work well as souvenirs, birthday gifts, holiday gifts, or simple everyday shirts inspired by Bend.
+        </p>
+
+        <div class="note">
+          This collection is optimized around searches including Bend Oregon shirts, Bend Oregon t shirts, Bend apparel, Central Oregon shirts, Mt. Bachelor shirts, and Bend Oregon clothing.
+        </div>
+      </section>
+
+      <section>
+        <h2>Shop Bend Oregon Apparel on Etsy</h2>
+
+        <p>
+          Browse the latest Bend-inspired shirt designs in the All Things Bend Etsy shop. New apparel designs may include mountain themes, local sayings, minimalist artwork, coffee-inspired graphics, and outdoor-inspired Central Oregon apparel.
+        </p>
+
+        <a
+          class="button"
+          href="https://allthingsbend.etsy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Bend Oregon T Shirts
         </a>
-      </div>
+      </section>
 
-      <h2>Related collections</h2>
-      <ul>
-        <li><a href="/mugs/bend-oregon-mugs">Bend Oregon Mugs</a></li>
-        <li><a href="/stickers/bend-oregon-stickers">Bend Oregon Stickers</a></li>
-        <li><a href="/shirts/sisters-oregon-shirts">Sisters Oregon Shirts</a></li>
-      </ul>
+      <section>
+        <h2>Related Bend Oregon Collections</h2>
+
+        <p>
+          Looking for more Bend-inspired products? Explore mugs, stickers, and other Central Oregon inspired items.
+        </p>
+
+        <ul>
+          <li>
+            <a href="/mugs/bend-oregon-mugs/">
+              Bend Oregon Mugs
+            </a>
+          </li>
+
+          <li>
+            <a href="/stickers/bend-oregon-stickers/">
+              Bend Oregon Stickers
+            </a>
+          </li>
+
+          <li>
+            <a href="/shirts/sisters-oregon-shirts/">
+              Sisters Oregon Shirts
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      All Things Bend Shop
+    </footer>
   </body>
 </html>
